@@ -1,0 +1,99 @@
+/*修改滚动条样式*/
+::-moz-scrollbar-trak{
+	background-color: #00FFFF;
+}
+
+/*修改被选中字体的背景颜色*/
+::-moz-selection { 
+	background-color: #E4B9B9; 
+	color: white; /* Firefox */ 
+}
+a {
+	color: white;
+}
+li{
+	list-style: none;
+}
+.dropdown-menu li:hover {
+	background-color: #204D74;
+	color: white;
+}
+
+.new {
+	background-color: #A94442;
+	border-radius: 2px;
+	margin-left: -15px;
+}
+.form_font{
+	display: inline;
+}
+.form_font a{
+	margin-left: 25px;
+}
+.form_font a:hover{
+	color: #E0E0E0;
+}
+
+.anima{
+	width: 1349px;
+	height: 540px;
+	background-image: url(../img/bannerbg.png);
+    margin-top: -30px;
+	padding-top: 130px;
+}
+.lop-right_font{
+	padding-left: 5px;
+	background-color: white;
+	
+}
+.right_font ul li{
+	list-style-type: none;
+	line-height: 40px;
+}
+.ul_dropdown-menu{
+	padding-top:-2px;
+	width: 100px;
+}
+.details{
+	margin-top: 15px;
+	height: auto;
+}
+.concerts-img{
+	font-size: 13px;
+	float: left;
+	width: 187px;
+	height:300px;
+	border:1px solid #9ACFEA;
+	border-radius: 5px;
+	padding:5px 0px 0px 5px;
+	margin-left:10px
+}
+.tab-concerts ul li a{
+	color: #000000;
+}
+.tab-concerts{
+	width: 290px;
+	margin-left: -5px;
+	border-bottom:1px solid #E0E0E0;
+	height: 270px;
+}
+.tab-concerts ul{
+	margin-top: 5px;
+	margin-left: -20px;
+}
+.tab-concerts ul:last-child li{
+	line-height: 40px;
+	border-bottom: 1px dashed #E0E0E0;
+	font-size:13px;
+}
+.Mr_ma{
+	width: 1170px;
+	height: 142px;
+	background: url(../img/ad1.jpg);
+}
+.Mr_ma{
+	margin-top: 25px;
+}
+.concerts-img:nth-child(2){
+	font-size: 12px;
+}

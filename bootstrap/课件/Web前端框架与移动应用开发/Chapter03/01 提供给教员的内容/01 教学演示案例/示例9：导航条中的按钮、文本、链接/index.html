@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>导航条中的按钮、文本、链接</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="container" style="margin: 20px">
+
+    <!--导航中的按钮-->
+    <nav class="navbar navbar-default ">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">LOGO</a>
+        </div>
+        <div class="nav navbar-nav">
+            <button class="btn btn-default navbar-btn">button</button>
+            <!--  navbar-btn-->
+            <button class="btn bg-primary navbar-btn">button</button>
+            <button class="btn btn-success navbar-btn">button</button>
+        </div>
+    </nav>
+
+    <!--导航中的文字-->
+    <nav class="navbar navbar-default ">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">LOGO</a>
+        </div>
+        <div class="nav navbar-nav">
+            <p class="navbar-text">text</p> <!--  navbar-text-->
+            <p class="navbar-text">text</p>
+
+            <p class="navbar-text">text</p>
+        </div>
+    </nav>
+    <!--导航中的链接-->
+    <!--不加navbar-text的时候发现排版是不对的，因为没有设置padding值-->
+    <nav class="navbar navbar-default ">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">LOGO</a>
+        </div>
+        <div class="nav navbar-nav">
+            <a href="#" class="navbar-text navbar-link">link</a> <!--  navbar-link-->
+            <a href="#" class="navbar-text  navbar-link">link</a>
+            <a href="#" class=" navbar-text navbar-link">link</a>
+        </div>
+    </nav>
+
+
+</div>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

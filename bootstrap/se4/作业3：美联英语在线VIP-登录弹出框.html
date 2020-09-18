@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<style>
+		li {
+			list-style: none;
+			color: white;
+			margin-left: 25px;
+			margin-top: 15px;
+		}
+		
+		.btnma {
+			margin-right: 25px;
+			margin-top: 5px;
+		}
+		
+		h6,
+		h4 {
+			display: inline;
+		}
+		
+		form {
+			/*	margin-top: 25px;
+				margin-bottom: 25px;
+				margin-left: 15px;
+				margin-right: 15px;*/
+			padding-right: 25px;
+			margin-left: 25px;
+			margin-bottom: 15px;
+		}
+		
+		input {
+			margin-top: 20px;
+		}
+		
+		button {
+			margin-top: 5px;
+		}
+		
+		.cess {
+			border: 1px solid black;
+			background:url(img/img2.jpg);
+			width: 1366px;
+			height: 550px;
+		}
+	</style>
+
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<ul class="navbar-nav">
+					<li><span class="glyphicon glyphicon-phone-alt"></span> 400-777-8828</li>
+					<li>中文</li>
+					<li>英文</li>
+				</ul>
+				<div class="navbar-right btnma">
+					<button class="btn btn-warning">免费注册</button>
+					<button class="btn btn-info" data-toggle="modal" data-target="#mymoda">登录</button>
+				</div>
+			</div>
+		</nav>
+		<div class="modal fade" id="mymoda">
+			<div class="modal-dialog modal-sm ">
+				<div class="modal-content" style="width:400px;">
+					<div class="modal-header">
+						<h4>欢迎登录</h4>
+						<h6>Sing in</h>
+						<button class="close" data-dismiss="modal">×</button>
+					</div>
+					<div class="media-body" style="height: 278px;">
+						<form action="#" method="post " style="margin-bottom: -15px;">
+							<input type="text" class="input-lg col-lg-offset-1 col-lg-10 col-lg-offset-1" placeholder="手机/用户名/邮箱"/>
+							<input type="password" class="input-lg col-lg-offset-1 col-lg-10 col-lg-offset-1" placeholder="请输入密码" style="margin-top: 35px;" />
+							<p class="col-lg-offset-1 col-lg-10 col-lg-offset-1" style="margin-top: 35px;"><input type="checkbox" /> 下次自动登录</p>
+							<button class="btn btn-danger btn-block col-lg-6 btnt">登录</button>
+							<br	 />
+						</form>
+					</div>
+					<div class="modal-footer"></div>
+				</div>
+			</div>
+		</div>
+		<div class="cess"></div>
+	</body>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+</html>
+<!--
+	作者：好一个铁石心肠的坤
+	时间：2019-02-27
+	描述：美联英语在线VIP-登录弹出框
+-->

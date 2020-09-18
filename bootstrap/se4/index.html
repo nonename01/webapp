@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>model</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<!--
+        	作者：好一个铁石心肠的坤
+        	时间：2019-02-25
+        	描述：bootstrap的js
+        	 modal：
+        	 fade：
+        	 modal-dialog：
+        	 content：
+        	 modal-header：
+        	 media-body：
+        	 modal-footer：
+        	 data-backdrop="static"：
+        -->
+		<script>
+			$('.modal').modal();
+		</script>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#mymodal">点击</button>
+
+		<div id="mymodal" class="modal fade">
+			<div class="modal-dialog modal-sm">
+				<div class="content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">我是标题</h4>
+					</div>
+					<div class="media-body">
+						<p>我是内容</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button class="btn btn-primary">保存</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<button class="btn btn-primary" data-toggle="modal" data-target="#mymoda">登录</button>
+		<div id="mymoda" class="modal fade">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">×</button>
+						<h4>登录账号</h4>
+					</div>
+					<div class="media-body">
+						<form style="padding-right: 25px; margin-left: 25px; margin-bottom: 15px;">
+							<input type="text" class="col-lg-12 input-lg" placeholder="请输入账号" />
+							<input type="password" class="col-lg-12 input-lg" placeholder="请输入密码" />
+							<input type="checkbox"  style="margin-top: 15px;"/>下次自动登录
+							<button class="btn btn-info btn-block col-sm-lg">登录</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		 <div>
+		 	 <ul class="nav nav-pills">
+		 	 	 <li class="active"><a href="#id1" data-toggle="tab">选项1</a></li>
+		 	 	 <li ><a href="#id2" data-toggle="tab">选项2</a></li>
+		 	 	 <li ><a href="#id3" data-toggle="tab">选项3</a></li>
+		 	 	 <li ><a href="#id4" data-toggle="tab">选项4</a></li>
+		 	 </ul>
+		 	 <div class="tab-content">
+		 	 	 <div class="tab-pane fade in active" id="id1">111111111111111111111</div>
+		 	 	 <div class="tab-pane fade " id="id2">222222222222222222222</div>
+		 	 	 <div class="tab-pane fade " id="id3">333333333333333333333</div>
+		 	 	 <div class="tab-pane fade " id="id4">444444444444444444444</div>
+		 	 </div>
+		 </div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+</html>

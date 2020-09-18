@@ -1,0 +1,69 @@
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Microsoft Yahei,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif!important;
+}
+h2.btitle {
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 38px;
+    color: #00a080;
+    font-weight: 100;
+}
+h4.subtitle {
+    position: relative;
+    margin-bottom: 20px;
+    color: #666;
+    text-align: center;
+    line-height: 30px;
+}
+/*4+核心优势 N+成效保障 */
+#home_service {
+    padding-top: 75px;
+    padding-bottom: 100px;
+    line-height: 30px;
+}
+
+#home_service .media {
+    margin-bottom: 30px;
+}
+.media, .media-body {
+    overflow: hidden;
+    zoom: 1;
+}
+.media {
+    margin-top: 15px;
+}
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+.media-left, .media>.pull-left {
+    padding-right: 10px;
+}
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+.media-body {
+    width: 10000px;
+}
+.media, .media-body {
+    overflow: hidden;
+    zoom: 1;
+}
+#home_service .media-body h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#home_service .media-body p {
+    max-width: 700px;
+}
+body p {
+    color: #666;
+}
+p {
+    margin: 0 0 10px;
+}
+
