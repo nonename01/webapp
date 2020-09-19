@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>05 透明度动画</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            opacity: 0.3;
+            /* filter: alpha(opacity:30);这是ie8以下的浏览器中的透明度属性 */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+    </div>
+    <script>
+        window.onload = function () {
+            var box = document.getElementById('box');
+            box.onmouseover = function () {
+                alphaAnimation(this, 100);
+            }
+            box.onmouseout = function () {
+                alphaAnimation(this, 30);
+            }
+
+            var timer = null,speed = 0, alpha = 30;   //speed是透明度变化的速度  alpha是物体起始的透明度
+            function alphaAnimation(obj, endAlpha) { //endAlpha是结束时的透明度值
+                clearInterval(timer);
+                 timer = setInterval(function () {
+                    speed = endAlpha > alpha ? 5 : -5;
+                    //处理边界
+                    if (alpha === endAlpha) {
+                        clearInterval(timer);
+                        return;
+                    }
+                    //改变当前的alpha值
+                    alpha += speed;
+
+                    //修改透明度的值
+                    obj.style.opacity = alpha / 100;
+                    // obj.style.filter = ` alpha(opacity:${alpha})`;
+
+                }, 30)
+            }
+        }
+    </script>
+</body>
+
+</html>
