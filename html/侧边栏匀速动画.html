@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04 侧边栏的缓动运动效果</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color:red;
+            position: relative;
+            left: -200px;
+        }
+        #box span{
+            width: 40px;
+            height: 60px;
+            color: #ffffff;
+            background-color: #000000;
+            line-height: 60px;
+            text-align: center;
+            position: absolute;
+            left:200px;
+            top: 50%;
+            margin-top: -30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <span>拉开</span>
+    </div>
+    <script>
+        //0~200；
+        //缓动运动的动画公式：加速度 = (结束值 - 起始值)/ 缓动系数； 加速度是由快到慢的 起始值就是offsetLet   缓动系数是由自己定义的
+        window.onload = function(){
+            var box = document.getElementById('box');
+            var timer = null,end = 0,end2 = -200;
+            box.onmouseover = function(){
+                clearInterval(timer);
+                timer = setInterval(function(){
+                    speed = Math.ceil((end - box.offsetLeft)/5);//给加速度的值取整,数值越小就越快
+                    if(box.offsetLeft === end){
+                        clearInterval(timer);
+                        return;
+                    }
+                    box.style.left = box.offsetLeft + speed +'px';
+                },30)
+            }
+            box.onmouseout = function(){
+                clearInterval(timer);
+                timer = setInterval(function(){
+                    speed = Math.floor((end2 - box.offsetLeft)/5);//给加速度的值取整,数值越小就越快
+                    if(box.offsetLeft === end2){
+                        clearInterval(timer);
+                        return;
+                    }
+                    box.style.left = box.offsetLeft + speed +'px';
+                },30)
+            }
+
+        }
+    </script>
+</body>
+</html>
+

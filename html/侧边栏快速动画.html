@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02 简单的侧边栏分享效果</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color:red;
+            position: relative;
+            left: -200px;
+        }
+        #box span{
+            width: 40px;
+            height: 60px;
+            color: #ffffff;
+            background-color: #000000;
+            line-height: 60px;
+            text-align: center;
+            position: absolute;
+            left:200px;
+            top: 50%;
+            margin-top: -30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <span>拉开</span>
+    </div>
+    <script>
+        window.onload = function(){
+            var box = document.getElementById('box');
+            box.onmouseover = function(){
+                this.style.left = 0 + 'px';
+            }
+            box.onmouseout = function(){
+                this.style.left = -200 + 'px';
+            }
+        }
+    </script>
+</body>
+</html>
