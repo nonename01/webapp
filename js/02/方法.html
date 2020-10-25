@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+            var obj={
+                     name:"老高",
+                    sex:"男",
+                    age:"18"
+                    
+            }
+            obj.oBjfun= function fun2(o) {
+                return alert(
+                        "姓名："+o.name+
+                        ",性别："+o.sex+
+                        ",年龄："+o.age
+                    );
+            }
+            
+            obj.oBjfun(obj);
+        for(var n in obj){
+            alert(n);
+        }
+    </script>
+</body>
+</html>
