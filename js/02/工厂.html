@@ -15,14 +15,18 @@
                 obj.age=age;
                 obj.sex=sex;
                 obj.saynaem=function(){
-                    alert(this.name,this.age,this.sex);
+                    console.log(this.name,this.age,this.sex);
                    
                 }
                 //返回新对象
                 return obj;
             }
             var objs=fun1("八戒",225,"男");
+            var objs2=fun1("悟空",1088,"男");
+            var objs3=fun1("白骨精",599,"女");
             objs.saynaem();
+            objs2.saynaem();
+            objs3.saynaem();
     </script>
 </body>
 </html>
