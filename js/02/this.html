@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var name="全局";
+    function fun1(){
+        alert(this.name);
+    }
+    var obj1={
+        name:"孙武",
+        sayname:fun1
+    }
+    var obj2={
+        name:"沙和尚",
+        sayname:fun1
+    }
+    //调用函数就会指向全局变量
+    fun1();
+    //调用方法就会指向局部变量
+    obj2.sayname();
+    </script>
+</body>
+</html>
